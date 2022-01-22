@@ -11,9 +11,9 @@ const app = new exprerss();
 app.use(bodyParser.json());
 
 // 테이블 생성하기
-db.pool.query('CREATE TABLE LISTS (ID INTEGER AUTO_INCREMENT,VALUE TEXT,PRIMARY KEY (id))', (err, results, fileds) => {
-    console.log("results", results);
-});
+// db.pool.query('CREATE TABLE LISTS (ID INTEGER AUTO_INCREMENT,VALUE TEXT,PRIMARY KEY (id))', (err, results, fileds) => {
+//     console.log("results", results);
+// });
 
 
 app.listen(5000, () => {

@@ -2,6 +2,14 @@
 
 Backend : Node.js
 Frontend : react
+DB : mysql
+
+개발환경
+DB -> 도커 사용
+
+운영환경
+DB -> AWS RDS 사용
+
 
 최초 프로젝트 구성법
 ```

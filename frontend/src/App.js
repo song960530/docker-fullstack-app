@@ -12,7 +12,7 @@ function App() {
     // 여기서 데이터베이스에 있는 값을 가져온다.
     axios.get("/api/values").then(response => {
       console.log("response",response.data);
-      setLists(reponse.data);
+      setLists(response.data);
     });
   }, []);
 
@@ -41,8 +41,8 @@ function App() {
         <div className="container">
 
           {lists && lists.map((list,index) => (
-            <li key={index}>list.value</li>
-          ))};
+            <li key={index}>{list.value}</li>
+          ))}
           <br/>
 
           <form className="example" onSubmit={submitHandler}>

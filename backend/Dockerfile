@@ -8,4 +8,6 @@ RUN npm install
 
 COPY ./ ./
 
+RUN chown -R node /app/node_modules
+
 CMD ["npm","run","start"]

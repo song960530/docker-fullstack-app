@@ -3,6 +3,11 @@
 Backend : Node.js
 Frontend : react
 
+최초 프로젝트 구성법
+```
+npm init -> package.json 생성
+npx create-react-app frontend -> frontend 디렉토리에 리액트 설치
+```
 
 ```
 레파지토리 최초 생성 후 연결방법

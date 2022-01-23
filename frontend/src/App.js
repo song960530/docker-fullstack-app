@@ -42,7 +42,7 @@ function App() {
         <div className="container">
 
           {lists && lists.map((list, index) => (
-            <li key={index}>{list.VALUE} </li>
+            <li key={index}>{list.value} </li>
           ))}
           <br/>
 

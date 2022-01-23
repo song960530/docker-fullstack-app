@@ -6,14 +6,14 @@
             "image": "song9605302/docker-frontend",
             "hostname": "frontend",
             "essential": false,
-            "memory": 512
+            "memory": 128
         },
         {
             "name": "backend",
             "image": "song9605302/docker-backend",
             "hostname": "backend",
             "essential": false,
-            "memory": 512
+            "memory": 128
         },
         {
             "name": "nginx",
@@ -27,7 +27,7 @@
                 }
             ],
             "links": ["frontend","backend"],
-            "memory": 512
+            "memory": 128
         }
     ]
 }

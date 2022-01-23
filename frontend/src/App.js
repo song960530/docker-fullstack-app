@@ -9,11 +9,12 @@ function App() {
   const [value, setValue] = useState("");
 
   useEffect(() => {
-    // 여기서 데이터베이스에 있는 값을 가져온다.
-    axios.get("/api/values").then(response => {
-      console.log("response",response.data);
-      setLists(response.data);
-    });
+    //여기서 데이터베이스에 있는 값을 가져온다.
+    axios.get('/api/values')
+      .then(response => {
+        console.log('response', response)
+        setLists(response.data)
+      })
   }, []);
 
   const changeHandler = (event) => {
@@ -40,8 +41,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <div className="container">
 
-          {lists && lists.map((list,index) => (
-            <li key={index}>{list.value}</li>
+          {lists && lists.map((list, index) => (
+            <li key={index}>{list.VALUE} </li>
           ))}
           <br/>
 

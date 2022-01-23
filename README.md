@@ -13,7 +13,7 @@ CI/CD : Travis-CI, Docker Hub, AWS EB
 - 배포과정
  - Travis-CI (테스트, 이미지생성, Docker Hub전달)
  -> Docker Hub (이미지 보관, AWS EB에서 가져가려 할때 전달)
- -> AWS EB (배포)
+  -> AWS EB (배포)
 
 
 최초 프로젝트 구성법
